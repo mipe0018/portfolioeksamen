@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "DancingScript";
+  src: url(../fonts/DancingScript.ttf);
+}
+
+@font-face {
+  font-family: "Hubballi";
+  src: url(../fonts/Hubballi.ttf);
+}
+
+@font-face {
+  font-family: "Alegreya";
+  src: url(../fonts/Alegreya.ttf);
+}
+
+:root {
+  /* colors */
+  --prime-blue: #041736;
+  --secondary-blue: #253659;
+  --prime-sand: #886c40;
+  --secondary-sand: #af9c77;
+  --prime-white: #f2f2f2;
+
+  /* font sizes */
+  --p-size: 12px;
+  --nav-li-size: 20px;
+  --cta-font-size: 128px;
+
+  /* borders */
+  --cta-borders: 1px;
+
+  /* fonts */
+  --font-secondary: "Hubballi";
+  --font-third: "Alegreya";
+  --font-prime: "DancingScript";
+}

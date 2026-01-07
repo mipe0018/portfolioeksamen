@@ -1,0 +1,256 @@
+.cover {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 47px;
+  height: 250px;
+  background-color: var(--prime-white);
+  border: 2px solid var(--prime-sand);
+}
+
+.cover img {
+  opacity: 0.5;
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  margin-top: 10%;
+}
+
+.cover h1 {
+  position: absolute;
+  font-family: var(--font-prime);
+  rotate: -8deg;
+  font-size: 38px;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
+.cover h2 {
+  font-family: var(--font-secondary);
+  color: var(--prime-sand);
+  font-size: 20px;
+  margin-top: 35%;
+}
+
+/* om mig section */
+.middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 47px;
+  padding: 10px;
+  height: 300px;
+  background-color: var(--prime-white);
+  border: 1px solid var(--prime-sand);
+}
+
+.middle h2 {
+  font-family: var(--font-third);
+  color: var(--prime-sand);
+  font-size: 24px;
+  margin-left: 5%;
+  margin-top: 5%;
+  line-height: 115%;
+}
+
+.middle p {
+  font-family: var(--font-secondary);
+  color: var(--prime-blue);
+  font-size: 18px;
+  margin-left: 5%;
+  margin-top: 5%;
+  line-height: 105%;
+}
+
+.middle img {
+  margin-top: -30%;
+  justify-self: center;
+  align-self: center;
+  border: 2px solid var(--prime-sand);
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.middle a {
+  text-decoration: none;
+  color: var(--prime-sand);
+}
+
+.middle a:hover {
+  color: rgba(0, 0, 0, 0.4);
+  transform: perspective(250px) translateZ(10px);
+}
+
+/*tema sektion */
+
+.notebook {
+  display: block;
+  filter: drop-shadow(0 0 5px #035470);
+  background-image: url(../assets/book-one.png);
+  background-size: contain;
+  width: 95%;
+  margin-left: 5%;
+  margin-top: 47px;
+  margin-bottom: 47px;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.notebook h2 {
+  font-family: var(--font-third);
+  color: var(--prime-sand);
+  font-size: 24px;
+  margin-left: 10%;
+  padding-top: 5%;
+  padding-left: 1rem;
+}
+
+.notebook a {
+  font-family: var(--font-third);
+  color: var(--prime-sand);
+  text-decoration: none;
+}
+
+.notebook a:hover {
+  opacity: 50%;
+}
+
+.notebook .booklink {
+  text-decoration: underline;
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  padding: 10px 30px;
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  color: var(--prime-white);
+  background-color: var(--secondary-blue);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 1px solid var(--prime-sand);
+  margin-left: 12%;
+  margin-top: 25px;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+}
+
+.btn-link:hover {
+  background-color: #9f9f9f;
+  color: var(--prime-blue);
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.btn-link:active {
+  transform: scale(0.96);
+  text-decoration: none;
+}
+
+.btn-link a {
+  color: var(--prime-white);
+  text-decoration: none;
+}
+
+.themebtn p {
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  color: var(--prime-blue);
+  margin-left: 35%;
+  margin-top: -5%;
+}
+
+.themebtn a {
+  color: var(--prime-white);
+  text-decoration: none;
+}
+
+/*responsiv*/
+
+@media (min-width: 375px) {
+  .cover {
+    justify-content: center;
+  }
+
+  .cover img {
+    margin: 0;
+    margin-top: 5%;
+  }
+
+  .cover h1 {
+    margin: 0;
+    margin-top: 10%;
+  }
+
+  .cover h2 {
+    margin: 0;
+    margin-top: 20%;
+  }
+}
+@media (min-width: 475px) {
+}
+
+@media (min-width: 675px) {
+  .notebook {
+    margin: 0 auto;
+    background-image: url(../assets/book-two.png);
+    width: 80%;
+    height: 600px;
+  }
+  .notebook h2 {
+    max-width: 200px;
+  }
+  .themebtn p {
+    margin-left: 55%;
+  }
+}
+@media (min-width: 940px) {
+  .notebook {
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+  }
+  .cover {
+    justify-content: center;
+  }
+
+  .cover img {
+    margin: 0;
+    margin-top: 2%;
+  }
+
+  .cover h1 {
+    margin: 0;
+    margin-top: 5%;
+  }
+
+  .cover h2 {
+    margin: 0;
+    margin-top: 10%;
+  }
+
+  .btn-link {
+    margin-top: 5%;
+  }
+  .themebtn p {
+    margin-left: 55%;
+  }
+}
+@media (min-width: 1140px) {
+  .notebook {
+    margin-left: 20%;
+    margin: 0 auto;
+    width: 50%;
+    height: 600px;
+  }
+
+  .themebtn p {
+    margin-left: 55%;
+  }
+}

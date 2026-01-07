@@ -1,0 +1,141 @@
+.bodyprojekt {
+  background-image: url("../assets/backgroundtwo.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
+/* Cover Section */
+
+.cover {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 47px;
+
+  height: 250px;
+  background-color: var(--prime-white);
+  border: 2px solid var(--prime-sand);
+}
+
+.cover img {
+  opacity: 0.5;
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  margin-top: 10%;
+}
+
+.cover h1 {
+  position: absolute;
+  font-family: var(--font-prime);
+  rotate: -8deg;
+  font-size: 38px;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
+.cover h2 {
+  font-family: var(--font-secondary);
+  color: var(--prime-sand);
+  font-size: 20px;
+}
+
+/*top box portfølge*/
+
+.middle {
+  width: 80%;
+  margin: 0 auto;
+  height: fit-content;
+  padding: 10px;
+  padding-bottom: 10%;
+  margin-bottom: 47px;
+  background-color: var(--prime-white);
+  border: 1px solid var(--prime-sand);
+}
+
+.middle h2 {
+  font-family: var(--font-third);
+  color: var(--prime-sand);
+  font-size: 24px;
+  margin-left: 5%;
+  margin-top: 5%;
+  line-height: 115%;
+}
+
+.middle p {
+  font-family: var(--font-secondary);
+  color: var(--prime-blue);
+  font-size: 18px;
+  margin-left: 5%;
+
+  line-height: 105%;
+}
+/*temaer*/
+
+.middle img {
+  justify-self: center;
+  align-self: center;
+  opacity: 70%;
+  width: 100px;
+}
+
+.middle img:hover {
+  filter: opacity(0.4);
+  transform: perspective(100px) translateZ(10px);
+}
+
+.temakort {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+}
+
+.temakort-right {
+  display: flex;
+  float: right;
+
+  width: 100%;
+}
+.temakort-left {
+  display: flex;
+  float: right;
+  width: 100%;
+  margin-top: 1rem;
+}
+.temakort-bottom {
+  display: flex;
+  float: right;
+  width: 100%;
+  align-content: center;
+  margin: 1rem;
+}
+/*indhold på temakort */
+.temakort-right h3 {
+  font-family: var(--font-third);
+  color: var(--prime-sand);
+  font-size: 24px;
+  margin-left: 10%;
+  line-height: 115%;
+}
+
+/*responsiv*/
+
+@media (min-width: 1000px) {
+  .cover {
+    width: 60%;
+  }
+  .cover img {
+    margin-top: 5%;
+  }
+
+  .cover h1 {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .middle {
+    width: 100%;
+  }
+}

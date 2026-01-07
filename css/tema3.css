@@ -1,0 +1,47 @@
+.emnesite-container {
+  width: 80%;
+  margin: 0 auto;
+  height: fit-content;
+  padding: 10px;
+  padding-bottom: 5%;
+  margin-bottom: 47px;
+  margin-top: 47px;
+  background-color: var(--prime-white);
+  border: 1px solid var(--prime-sand);
+}
+
+.emnesite-container h2 {
+  font-family: var(--font-third);
+  color: var(--prime-sand);
+  font-size: 24px;
+  margin-left: 5%;
+  margin-top: 5%;
+  line-height: 115%;
+}
+
+.emnesite-container h4 {
+  font-family: var(--font-secondary);
+  color: var(--prime-blue);
+  font-size: 24px;
+  margin-left: 5%;
+  line-height: 105%;
+  padding-top: 1rem;
+}
+
+.emnesite-container p {
+  font-family: var(--font-secondary);
+  color: var(--prime-blue);
+  font-size: 18px;
+  margin-left: 5%;
+  line-height: 105%;
+}
+
+.emnesite-container img {
+  width: 100%;
+}
+/*resonsiv*/
+@media (min-width: 680px) {
+  .emnesite-container {
+    width: 60%;
+  }
+}
